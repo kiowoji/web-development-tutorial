@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <h1>Contact Us!</h1>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name Surname" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="country">Your country:</label>
+            <select name="country" id="country">
+                <option value="france">France</option>
+                <option value="mexico">Mexico</option>
+                <option value="italy">Italy</option>
+                <option value="hungary">Hungary</option>
+                <option value="romania">Romania</option>
+                <option value="germany">Germany</option>
+                <option value="ukraine">Ukraine</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Enter message:</label><br>
+            <textarea name="message" id="message"></textarea>
+        </div>
+        <div>
+            <label for="file">Add file:</label><br>
+            <input type="file" id="file" name="file">
+        </div>
+        <button type="submit">Send message</button>
+    </form>
+    
+</body>
+
+</html>
